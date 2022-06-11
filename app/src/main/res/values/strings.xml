@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">CartaLibre</string>
+    <string name="tittle">Carta de bebidas</string>
+    <string name="coctel">Cócteles</string>
+    <string name="martini">Martini</string>
+    <string name="precio_martini">$25k</string>
+    <string name="cuba_libre">Cuba libre</string>
+    <string name="precio_cubalibre">$10k</string>
+    <string name="mojito">Mojito</string>
+    <string name="precio_mojito">$20k</string>
+    <string name="martini_selection">Seleccionar</string>
+    <string name="cubalibre_selection">Seleccionar</string>
+    <string name="mojito_selection">Seleccionar</string>
+    <string name="gintonic">Gintonic</string>
+    <string name="precio_gintonic">$25k</string>
+    <string name="gintonic_selection">Seleccionar</string>
+    <string name="pedir">Ordenar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="total_pagar">Total a pagar: </string>
+    <string name="info">Resultado: %s\n </string>
+    <string-array name= "numbers">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+</resources>
