@@ -35,7 +35,7 @@
                         android:layout_marginEnd="16dp"
                         android:text="@string/tittle"
                         android:textColor="@color/design_default_color_error"
-                        android:textSize="18sp"
+                        android:textSize="24sp"
                         android:textStyle="bold"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -50,7 +50,7 @@
                         android:layout_marginEnd="16dp"
                         android:text="@string/coctel"
                         android:textColor="@color/black"
-                        android:textSize="16sp"
+                        android:textSize="20sp"
                         android:textStyle="bold"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -375,6 +375,46 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="@+id/guideline2"
                         app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+                    <View
+                        android:id="@+id/divider1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="4dp"
+                        android:background="@color/ic_launcher_background"
+                        app:layout_constraintBottom_toTopOf="@+id/cubalibre_textView6"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/martini_checkBox" />
+
+                    <View
+                        android:id="@+id/divider2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="4dp"
+                        android:background="@color/ic_launcher_background"
+                        app:layout_constraintBottom_toTopOf="@+id/mojito_textView8"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cubalibre_checkBox2" />
+
+                    <View
+                        android:id="@+id/divider3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="4dp"
+                        android:background="@color/ic_launcher_background"
+                        app:layout_constraintBottom_toTopOf="@+id/gintonic_textView"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/mojito_checkBox3" />
+
+                    <View
+                        android:id="@+id/divider4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="4dp"
+                        android:background="@color/ic_launcher_background"
+                        app:layout_constraintBottom_toTopOf="@+id/martini_textView4"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/coctel_textView2" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>
