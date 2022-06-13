@@ -1,4 +1,4 @@
-package com.example.cartalibre
+package com.example.cartalibre.ui.main
 
 import android.app.Activity
 import android.os.Bundle

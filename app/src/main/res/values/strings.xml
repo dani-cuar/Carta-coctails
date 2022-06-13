@@ -18,7 +18,7 @@
     <string name="cancel">Cancelar</string>
     <string name="total_pagar">Total a pagar: </string>
     <string name="info">Resultado: %s\n </string>
-    <string-array name= "numbers">
+    <string-array name="numbers">
         <item>0</item>
         <item>1</item>
         <item>2</item>
