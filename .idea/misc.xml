@@ -4,9 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Usuario/Documents/Proyectos Android Studio/Carta/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/recti/AndroidStudioProjects/Practica1_Carta_coctails/app/src/main/res/layout/activity_main.xml" value="0.1140625" />
       </map>
     </option>
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
 </project>
