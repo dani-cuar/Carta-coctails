@@ -1,8 +1,11 @@
 package com.example.cartalibre.ui.main
 
 import android.os.Bundle
+import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
+import com.example.cartalibre.R
 import com.example.cartalibre.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -20,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         mainViewModel = ViewModelProvider(this)[MainViewModel::class.java]
 
         mainViewModel.mutableTotalDone.observe(this) { mutableTotal ->
-            mainBinding.resultadoTextView4.text = mutableTotal.toString()
+            mainBinding.resultadoTextView4.text = getString(R.string.pay, mutableTotal.toString())
         }
 
         fun checkSpinners() {
@@ -61,11 +64,26 @@ class MainActivity : AppCompatActivity() {
                 mainViewModel.calcularTotalProducto(4, cantidad_gintonic)
             }
             //else total_gintonic = 0
+            if(mainBinding.martiniCheckBox.isChecked || mainBinding.cubalibreCheckBox2.isChecked ||
+                mainBinding.mojitoCheckBox3.isChecked || mainBinding.gintonicCheckBox.isChecked ){
+                mainViewModel.calcularTotalCuenta()
+                mainBinding.totalTextView3.setVisibility(TextView.VISIBLE)
+                mainBinding.resultadoTextView4.setVisibility(TextView.VISIBLE)
 
-            mainViewModel.calcularTotalCuenta()
+            }
+            else{
+                Toast.makeText(
+                    this@MainActivity,
+                    getString(R.string.not_cheked_message),
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
+
         }
         mainBinding.cancelButton2.setOnClickListener {
             mainViewModel.borrarTotalCuenta()
+            mainBinding.totalTextView3.setVisibility(TextView.INVISIBLE)
+            mainBinding.resultadoTextView4.setVisibility(TextView.INVISIBLE)
             mainBinding.martiniCheckBox.isChecked = false
             mainBinding.cubalibreCheckBox2.isChecked = false
             mainBinding.mojitoCheckBox3.isChecked = false

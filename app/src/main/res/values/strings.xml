@@ -17,7 +17,9 @@
     <string name="pedir">Ordenar</string>
     <string name="cancel">Cancelar</string>
     <string name="total_pagar">Total a pagar: </string>
+    <string name="not_cheked_message">No has seleccionado ningún producto</string>
     <string name="info">Resultado: %s\n </string>
+    <string name="pay">"$%s"</string>
     <string-array name="numbers">
         <item>0</item>
         <item>1</item>
